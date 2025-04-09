@@ -1,0 +1,4 @@
+name: mod-name
+challenges:
+  - id: <built-in method lower of str object at 0x7fb48688ac70>
+    name: chal-name

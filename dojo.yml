@@ -1,0 +1,6 @@
+id: <built-in method lower of str object at 0x7fb48689e2b0>
+name: test
+type: topic
+image: pwncollege/challenge-simple
+modules:
+ - id: mod-name
