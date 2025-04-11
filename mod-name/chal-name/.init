@@ -1,3 +1,5 @@
-#!/bin/bash
+#!/usr/bin/bash
+echo "init script ran!" > /tmp/init_test.log
 python grep_template.py
+pip install pyyaml
 rm input.yml
