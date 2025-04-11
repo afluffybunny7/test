@@ -1,4 +1,4 @@
 name: mod-name
 challenges:
-  - id: <built-in method lower of str object at 0x7fb2aa3f4cf0>
+  - id: <built-in method lower of str object at 0x7f016108acb0>
     name: chal-name
