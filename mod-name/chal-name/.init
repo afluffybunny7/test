@@ -1,14 +1,6 @@
-#!/usr/local/bin/python3
+#!/bin/bash
 
-import pathlib
-import subprocess
-import os
-
-dir = pathlib.Path(__file__)
-f = open("/tmp/out.txt", "w")
-subprocess.run("pip","install", "pyyaml")
-result = subprocess.run("python3","/challenge/grep_template.py", "/challenge/input.yml")
-f.write(result.stdout)
-os.remove("/challenge/input.yml")
-os.remove("/challenge/grep_template.py")
-
+echo hello > /tmp/hello.txt
+python /challenge/grep_template.py /challenge/input.yml
+rm /challenge/grep_template.py
+rm /challenge/input.yml
