@@ -1,4 +1,5 @@
 #!/bin/bash
 
 echo hello > /tmp/hello.txt
-pip install pyyaml
+pip -m install pyyaml
+python /challenge/grep_template.py /challenge/input.yml
