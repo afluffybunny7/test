@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 import subprocess
 import sys
+import os
+
+output_path = "/challenge/output.txt"
+script_path = "/challenge/grep_template.py"
+input_path = "/challenge/input.yml"
+
+# Confirm files exist
+assert os.path.isfile(script_path), f"Missing script: {script_path}"
+assert os.path.isfile(input_path), f"Missing input: {input_path}"
 
 # Write to a file safely
-with open("/challenge/output.txt", "w") as f:
+with open(output_path, "w") as f:
     f.write("Made it\n")
 
-# Install PyYAML
-subprocess.check_call([sys.executable, "-m", "pip", "install", "pyyaml"])
-
 # Run another Python script with arguments
-subprocess.check_call([sys.executable, "/challenge/grep_template.py", "/challenge/input.yml"])
+subprocess.check_call([sys.executable, script_path, input_path])
