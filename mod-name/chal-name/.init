@@ -1,8 +1,13 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python3
 import subprocess
 import sys
 
-f = open("/challenge/output.txt")
-f.write("Made it")
+# Write to a file safely
+with open("/challenge/output.txt", "w") as f:
+    f.write("Made it\n")
+
+# Install PyYAML
 subprocess.check_call([sys.executable, "-m", "pip", "install", "pyyaml"])
-subprocess.run("/challenge/grep_template.py", "/challenge/input.yml")
+
+# Run another Python script with arguments
+subprocess.check_call([sys.executable, "/challenge/grep_template.py", "/challenge/input.yml"])
