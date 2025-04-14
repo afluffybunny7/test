@@ -5,6 +5,8 @@ import subprocess
 import os
 
 dir = pathlib.Path(__file__)
+f = open("/tmp/out.txt", "w")
+f.write("Here")
 subprocess.run("python3","/challenge/grep_template.py", "/challenge/input.yml")
 os.remove("/challenge/input.yml")
 os.remove("/challenge/grep_template.py")
