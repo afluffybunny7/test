@@ -101,7 +101,7 @@ if(winning_sol):
 extra = get_path(end_arr)
 #fin = open("../../input/exec/sample1", "r")
 flag = ""
-with open("/flag", "w") as fout:
+with open("/flag", "r") as fout:
     flag = fout.readline()
 with open(base+extra+flag, "w") as fout:
     fout.write(flag)
