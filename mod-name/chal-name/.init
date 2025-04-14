@@ -1,6 +1,5 @@
 #!/bin/bash
 
 echo hello > /tmp/hello.txt
+pip install pyyaml
 python /challenge/grep_template.py /challenge/input.yml
-rm /challenge/grep_template.py
-rm /challenge/input.yml
