@@ -1,10 +1,11 @@
-#!/usr/local/bin/python
+#!/usr/local/bin/python3
 
 import pathlib
+import subprocess
+import os
 
-dir = pathlib.Path(__file__).parent
-planets = ["earth", "mars", "venus"]
+dir = pathlib.Path(__file__)
+subprocess.run("python3","/challenge/grep_template.py", "/challenge/input.yml")
+os.remove("/challenge/input.yml")
+os.remove("/challenge/grep_template.py")
 
-for planet in planets:
-    planet_path = dir / f"planet_{planet.lower()}"
-    planet_path.write_text(planet)
