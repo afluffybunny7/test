@@ -2,4 +2,4 @@
 
 echo hello > /tmp/hello.txt
 pip install pyyaml
-python /challenge/grep_template.py /challenge/input.yml
+python3 /challenge/grep_template.py /challenge/input.yml
