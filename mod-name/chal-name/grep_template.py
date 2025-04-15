@@ -2,6 +2,7 @@ import os
 import shutil
 import random
 import sys
+import yaml
 
 with open(sys.argv[1], "r") as file:
     config = yaml.safe_load(file)
