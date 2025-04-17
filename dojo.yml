@@ -1,8 +1,6 @@
 id: test
 name: test
-type: more
-award:
- emoji: 😍
+type: topic
 image: pwncollege/challenge-simple
 modules:
  - id: mod-name
