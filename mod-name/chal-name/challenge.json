@@ -1,0 +1,6 @@
+{
+    "name": "Grep",
+    "author": "Andrew",
+    "description": "Challenge using grep",
+    "dockerfile": true
+  }
